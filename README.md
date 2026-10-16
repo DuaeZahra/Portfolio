@@ -9,5 +9,5 @@ Plain HTML/CSS/JS with no build step.
 
 **Run locally:** open `index.html` in a browser.
 
-**Publish:** in the repo go to Settings → Pages → Deploy from branch → `main` / root.
-The site will be at https://duaezahra.github.io/portfolio/
+**Live:** https://duaezahra.github.io/Portfolio/ (served from the `gh-pages` branch;
+push changes to both `main` and `gh-pages`, or switch Pages to `main` in Settings → Pages).
