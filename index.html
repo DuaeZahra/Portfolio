@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dua-e-Zahra Naqvi</title>
+<meta name="description" content="Dua-e-Zahra Naqvi — partnerships, technical sales and AI product. Portfolio desktop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Pinyon+Script&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- menu bar -->
+<header class="menubar">
+  <div class="menubar-left">
+    <span class="apple" aria-hidden="true">🎀</span>
+    <strong id="active-app">Finder</strong>
+    <button class="menu-link" data-open="about">About</button>
+    <button class="menu-link" data-open="experience">Experience</button>
+    <button class="menu-link" data-open="projects">Projects</button>
+    <button class="menu-link" data-open="contact">Contact</button>
+  </div>
+  <div class="menubar-right">
+    <span aria-hidden="true">♡</span>
+    <span id="clock"></span>
+  </div>
+</header>
+
+<main class="desktop" id="desktop">
+  <!-- greeting on the wallpaper -->
+  <div class="wallpaper-greeting" aria-hidden="true">
+    <span class="script">hello, I'm</span>
+    <span class="serif">Dua-e-Zahra</span>
+    <span class="hint">partnerships · AI product · tech sales<br><em>click an icon to open ♡</em></span>
+  </div>
+
+  <!-- desktop icons -->
+  <nav class="icons" aria-label="Desktop">
+    <button class="icon" data-open="about"><span class="glyph file">📝</span><span class="label">about_me.txt</span></button>
+    <button class="icon" data-open="experience"><span class="glyph folder"></span><span class="label">Experience</span></button>
+    <button class="icon" data-open="projects"><span class="glyph folder"></span><span class="label">Projects</span></button>
+    <button class="icon" data-open="ai"><span class="glyph folder sparkle"></span><span class="label">AI Portfolio</span></button>
+    <button class="icon" data-open="skills"><span class="glyph file">🧁</span><span class="label">skills.app</span></button>
+    <button class="icon" data-open="extras"><span class="glyph file">🏅</span><span class="label">certs &amp; clubs</span></button>
+    <button class="icon" data-open="contact"><span class="glyph file">💌</span><span class="label">say hi</span></button>
+  </nav>
+
+  <!-- sticky note -->
+  <aside class="sticky" aria-hidden="true">
+    <span class="pin">🎀</span>
+    <p>currently:<br>building partnerships<br>@ ImagineArt ♡</p>
+  </aside>
+
+  <!-- ===== windows ===== -->
+
+  <section class="window" id="win-about" data-title="about_me.txt" style="--x:22vw;--y:10vh;--w:520px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">about_me.txt</span></div>
+    <div class="wbody">
+      <div class="about-head">
+        <div class="avatar" aria-hidden="true">DZ</div>
+        <div>
+          <h1>Dua-e-Zahra Naqvi</h1>
+          <p class="muted">Islamabad, Pakistan</p>
+        </div>
+      </div>
+      <p class="tagline">Strategic Partnerships · Technical Sales · Product Management · AI Product Development &amp; Real-Time Systems</p>
+      <p>I'm a Computer Science graduate from GIKI who sits between the technical and the human side of AI. Today I build international partnerships and help hire talent at <strong>ImagineArt</strong>; before that I shipped computer-vision, ML forecasting and GIS systems as an engineer.</p>
+      <p>I like turning research prototypes into things people can actually use, and turning cold outreach into real relationships.</p>
+      <div class="chips">
+        <span>BS Computer Science · GIKI '26</span>
+        <span>Dean's Honor Roll ×2</span>
+        <span>GenPakistan Fellow</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="window" id="win-experience" data-title="Experience" style="--x:30vw;--y:14vh;--w:600px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">Experience</span></div>
+    <div class="wbody">
+      <ol class="timeline">
+        <li>
+          <div class="when">Feb '26 – Present</div>
+          <h3>Talent Acquisition &amp; International Partnerships Associate</h3>
+          <p class="org">ImagineArt · Islamabad</p>
+          <ul>
+            <li>End-to-end talent acquisition: sourcing, screening and coordinating candidates for technical and non-technical roles.</li>
+            <li>Build and manage international partnerships with organisations across regions.</li>
+            <li>Work directly with founders and leadership on growth initiatives.</li>
+            <li>Led outreach campaigns for the global ambassador and creator programs.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Jul – Aug 2025</div>
+          <h3>AI Intern</h3>
+          <p class="org">EmpowerBits · Islamabad</p>
+          <ul>
+            <li>Real-time computer-vision pipelines for a virtual eyeglasses try-on (MediaPipe, Python, React).</li>
+            <li>Face-landmark detection and geometric alignment, tuned for low latency on live video.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Mar – Apr 2025</div>
+          <h3>ML Intern</h3>
+          <p class="org">10Pearls · Remote</p>
+          <ul>
+            <li>End-to-end ML pipeline forecasting PM10 from live weather and pollution data.</li>
+            <li>Automated retraining via GitHub Actions; web app serving 3-day forecasts.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Jun – Jul 2024</div>
+          <h3>WebGIS Intern</h3>
+          <p class="org">National Disaster Management Authority (NDMA)</p>
+          <ul>
+            <li>Django-based spatial analytics system over large-scale geographic data.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="window" id="win-projects" data-title="Projects" style="--x:18vw;--y:8vh;--w:680px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">Projects</span></div>
+    <div class="wbody">
+      <div class="cards">
+        <article class="card">
+          <span class="card-emoji">🧬</span>
+          <h3>Federated Rare Disease Diagnosis</h3>
+          <p>Final-year project. Institutions train diagnostic models together with federated learning, never sharing patient data. Blockchain handles secure aggregation and auditability.</p>
+          <div class="tags"><span>Federated Learning</span><span>Blockchain</span><span>Medical AI</span></div>
+        </article>
+        <article class="card">
+          <span class="card-emoji">💼</span>
+          <h3>Automated Career Assistant</h3>
+          <p>LLM app with LangChain + RAG that ingests resumes and job descriptions and writes ATS-optimised resumes, cover letters and emails.</p>
+          <div class="tags"><span>LangChain</span><span>RAG</span><span>Prompting</span></div>
+        </article>
+        <article class="card">
+          <span class="card-emoji">📚</span>
+          <h3>Research Query Assistant</h3>
+          <p>Citation-aware RAG over academic papers, answering with paper and section references. Compared chunking strategies; evaluated with Recall@k and faithfulness.</p>
+          <div class="tags"><span>FAISS</span><span>RAG eval</span><span>PDF ingestion</span></div>
+        </article>
+        <article class="card">
+          <span class="card-emoji">🌫️</span>
+          <h3>PM10 Forecasting Pipeline</h3>
+          <p>LSTM time-series model on 180 days of pollution and weather data. RMSE 11.29, R² 0.997. Hopsworks versioning, GitHub Actions retraining, live 3-day forecasts.</p>
+          <div class="tags"><span>LSTM</span><span>MLOps</span><span>Hopsworks</span></div>
+        </article>
+        <article class="card">
+          <span class="card-emoji">🗺️</span>
+          <h3>Automated Risk Calculator</h3>
+          <p>Interactive GIS tool (Django + Mapbox) scoring hazard risk on uploaded shapefiles across 15+ infrastructure layers and 1000+ geographic units.</p>
+          <div class="tags"><span>Django</span><span>Mapbox</span><span>GIS</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="window" id="win-ai" data-title="AI Portfolio" style="--x:36vw;--y:20vh;--w:440px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">AI Portfolio</span></div>
+    <div class="wbody center">
+      <div class="big-folder" aria-hidden="true"></div>
+      <h2 class="serif-h">my AI work ✦</h2>
+      <p>Images, videos and experiments I've made with generative AI tools live in one folder.</p>
+      <a class="btn" href="https://drive.google.com/drive/folders/1e8-bptwraTwyYx8hRLhcGsK51VBurwHl?usp=sharing" target="_blank" rel="noopener">Open the folder ↗</a>
+    </div>
+  </section>
+
+  <section class="window" id="win-skills" data-title="skills.app" style="--x:42vw;--y:12vh;--w:520px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">skills.app</span></div>
+    <div class="wbody">
+      <div class="skill-group"><h4>Partnerships &amp; BD</h4><div class="chips"><span>Strategic Partnerships</span><span>Lead Generation</span><span>Market Research</span><span>Outreach</span><span>Negotiation</span><span>Pre-Sales</span></div></div>
+      <div class="skill-group"><h4>Communication &amp; Ops</h4><div class="chips"><span>Pitching</span><span>Pipeline Management</span><span>Relationship Building</span><span>Agile / Scrum</span><span>Technical Docs</span></div></div>
+      <div class="skill-group"><h4>AI</h4><div class="chips"><span>LLMs</span><span>RAG</span><span>Prompt Engineering</span><span>AI Product Workflows</span><span>ML Fundamentals</span></div></div>
+      <div class="skill-group"><h4>Code</h4><div class="chips"><span>Python</span><span>C++</span><span>JavaScript</span><span>React</span><span>Django</span><span>PostgreSQL</span></div></div>
+      <div class="skill-group"><h4>Tools</h4><div class="chips"><span>LangChain</span><span>TensorFlow</span><span>scikit-learn</span><span>Hugging Face</span><span>Pandas</span><span>Docker</span><span>GitHub Actions</span><span>Vercel</span><span>QGIS</span><span>Mapbox</span></div></div>
+    </div>
+  </section>
+
+  <section class="window" id="win-extras" data-title="certs & clubs" style="--x:26vw;--y:24vh;--w:480px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">certs &amp; clubs</span></div>
+    <div class="wbody">
+      <ul class="list">
+        <li><span>🌷</span><div><strong>Fellow, GenPakistan Fellowship</strong><br><span class="muted">US Embassy &amp; USIP</span></div></li>
+        <li><span>👩‍💻</span><div><strong>Lead, Women in Computing</strong><br><span class="muted">ACM GIKI Chapter: team leadership, community, events</span></div></li>
+        <li><span>📣</span><div><strong>Liaison &amp; Media Head</strong><br><span class="muted">GIKI Media Club: outreach, comms, stakeholders</span></div></li>
+        <li><span>🎓</span><div><strong>Google certificates</strong><br><span class="muted">Intro to Generative AI · Crash Course on Python · Digital Marketing</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="window" id="win-contact" data-title="say hi" style="--x:48vw;--y:28vh;--w:400px">
+    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">say hi</span></div>
+    <div class="wbody center">
+      <p class="script big">let's talk</p>
+      <p>Partnerships, collaborations or just a hello. My inbox is open.</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:duazahra796@gmail.com">💌 duazahra796@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/dua-e-zahra-9b52b3266" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://github.com/DuaeZahra" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- dock -->
+<footer class="dock-wrap">
+  <div class="dock" role="toolbar" aria-label="Dock">
+    <button class="dock-item" data-open="about" title="About">📝</button>
+    <button class="dock-item" data-open="experience" title="Experience">💼</button>
+    <button class="dock-item" data-open="projects" title="Projects">🧸</button>
+    <button class="dock-item" data-open="ai" title="AI Portfolio">✨</button>
+    <button class="dock-item" data-open="skills" title="Skills">🧁</button>
+    <button class="dock-item" data-open="extras" title="Certs &amp; clubs">🏅</button>
+    <span class="dock-sep"></span>
+    <button class="dock-item" data-open="contact" title="Say hi">💌</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
