@@ -146,6 +146,17 @@ h1 { font-family: var(--serif); font-style: italic; font-weight: 800; font-size:
 .list li { display: flex; gap: 12px; align-items: flex-start; }
 .list li > span { font-size: 22px; line-height: 1.2; }
 
+.polaroid {
+  width: 58px; height: 66px; display: block; padding: 5px 5px 13px; background: #fff;
+  border-radius: 2px; transform: rotate(-4deg);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .06), 0 4px 8px rgba(0, 0, 0, .15);
+}
+.polaroid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.icon:hover .polaroid { transform: rotate(-4deg) translateY(-2px); }
+.me-body { padding: 0; line-height: 0; }
+.me-card { width: 100%; height: auto; display: block; }
+img.avatar { object-fit: cover; padding: 0; }
+
 .big-folder { width: 120px; height: 93px; margin: 6px auto 12px; display: block; overflow: visible; }
 
 .btn {
@@ -191,6 +202,7 @@ h1 { font-family: var(--serif); font-style: italic; font-weight: 800; font-size:
   .icons { position: absolute; top: 24px; left: 12px; right: 12px; display: grid; grid-template-columns: repeat(4, 1fr); row-gap: 18px; }
   .icon { position: static; transform: none; width: auto; }
   .ico { width: 44px; height: 52px; }
+  .polaroid { width: 48px; height: 56px; padding: 4px 4px 10px; }
   .ico.folder { width: 62px; height: 48px; }
   .icon .label { font-size: 12px; text-align: center; }
   .window, .window.maxed { left: 8px !important; right: 8px; top: 8px !important; width: auto; height: auto; max-height: calc(100vh - 100px); }
