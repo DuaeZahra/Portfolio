@@ -1,11 +1,10 @@
 # Dua-e-Zahra Naqvi · Portfolio
 
-A coquette-styled, macOS-desktop portfolio: draggable windows and icons, and a dock.
-Plain HTML/CSS/JS with no build step.
+Plain HTML/CSS/JS, no build step.
 
-- `index.html`: content (about, experience, projects, AI portfolio, skills, contact)
-- `style.css`: the look
-- `script.js`: window and icon open/close/drag, dock
+- `/` (`index.html`, `home.css`, `home.js`): minimal editorial homepage with a floating-glass hero
+- `/desktop/`: the coquette macOS-desktop version (draggable windows, icons and dock)
+- `assets/`: photos and the intro card
 
 **Run locally:** open `index.html` in a browser.
 

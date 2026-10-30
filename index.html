@@ -4,286 +4,228 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dua-e-Zahra Naqvi</title>
-<meta name="description" content="Dua-e-Zahra Naqvi: partnerships, technical sales and AI product. Portfolio desktop.">
+<meta name="description" content="Dua-e-Zahra Naqvi: partnerships, talent and AI products. CS grad from GIKI, based in Islamabad.">
 <meta property="og:title" content="Dua-e-Zahra Naqvi · Portfolio">
-<meta property="og:description" content="Partnerships, technical sales and AI product.">
+<meta property="og:description" content="Where people, products and partners meet.">
 <meta property="og:image" content="https://duaezahra.vercel.app/assets/card.jpg">
 <meta property="og:url" content="https://duaezahra.vercel.app">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-<!-- shared svg defs: folder patterns + bow -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <pattern id="gingham" width="8" height="8" patternUnits="userSpaceOnUse">
-      <rect width="8" height="8" fill="#2b2b2b"/>
-      <rect width="4" height="8" fill="#6b6b6b" opacity=".7"/>
-      <rect width="8" height="4" fill="#6b6b6b" opacity=".7"/>
-      <rect width="4" height="4" fill="#9a9a9a"/>
-    </pattern>
-    <pattern id="gingham-pink" width="8" height="8" patternUnits="userSpaceOnUse">
-      <rect width="8" height="8" fill="#fff"/>
-      <rect width="4" height="8" fill="#f6b9cb" opacity=".8"/>
-      <rect width="8" height="4" fill="#f6b9cb" opacity=".8"/>
-      <rect width="4" height="4" fill="#ee93ae"/>
-    </pattern>
-    <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
-      <rect width="6" height="6" fill="#f6b3c7"/>
-      <circle cx="3" cy="3" r="1" fill="#fff"/>
-    </pattern>
-    <pattern id="tinydots" width="6" height="6" patternUnits="userSpaceOnUse">
-      <rect width="6" height="6" fill="#2a2a2a"/>
-      <circle cx="3" cy="3" r=".7" fill="#555"/>
-    </pattern>
-    <symbol id="bow" viewBox="0 0 60 50">
-      <path d="M30 20 C22 6 4 2 4 14 C4 26 22 26 30 20 Z" fill="#f7b7c9" stroke="#a83d62" stroke-width="2.4" stroke-linejoin="round"/>
-      <path d="M30 20 C38 6 56 2 56 14 C56 26 38 26 30 20 Z" fill="#f7b7c9" stroke="#a83d62" stroke-width="2.4" stroke-linejoin="round"/>
-      <path d="M12 12 C16 14 20 17 24 19 M48 12 C44 14 40 17 36 19" fill="none" stroke="#a83d62" stroke-width="1.4" opacity=".6"/>
-      <path d="M28 22 L18 46 L24 43 L27 48 L31 24 Z" fill="#f7b7c9" stroke="#a83d62" stroke-width="2.2" stroke-linejoin="round"/>
-      <path d="M32 22 L42 46 L36 43 L33 48 L29 24 Z" fill="#f7b7c9" stroke="#a83d62" stroke-width="2.2" stroke-linejoin="round"/>
-      <ellipse cx="30" cy="21" rx="5" ry="5.5" fill="#f39ab5" stroke="#a83d62" stroke-width="2.4"/>
-    </symbol>
-    <symbol id="folder-shape" viewBox="0 0 80 62">
-      <path d="M2 8 a4 4 0 0 1 4-4 h20 l6 6 h42 a4 4 0 0 1 4 4 v44 a4 4 0 0 1-4 4 h-68 a4 4 0 0 1-4-4z"/>
-    </symbol>
-  </defs>
-</svg>
+<div class="frame">
 
-<main class="desktop" id="desktop">
+<!-- ===== nav ===== -->
+<header class="nav">
+  <a class="brand" href="#top">Dua-e-Zahra<sup>°</sup></a>
+  <nav class="pill-nav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-dark btn-sm" href="mailto:duazahra796@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+</header>
 
-  <div class="hero" aria-hidden="true">
-    <p class="hero-small">welcome to my</p>
-    <p class="hero-big">portfolio<svg class="hero-bow"><use href="#bow"/></svg></p>
-    <p class="hero-name">Dua-e-Zahra Naqvi</p>
+<!-- ===== hero ===== -->
+<section class="hero" id="top">
+  <h1 class="headline">
+    <span class="l1">Where people, products</span>
+    <span class="l2">and partners meet.</span>
+  </h1>
+  <p class="lede">I'm Dua, a CS grad from GIKI working across partnerships, talent and AI products. I build the bridges that turn good ideas into real work.</p>
+  <div class="cta">
+    <a class="btn btn-dark" href="#work">See my work <span aria-hidden="true">→</span></a>
+    <a class="btn btn-ghost" href="desktop/"><span class="spark" aria-hidden="true">✦</span> Desktop version</a>
   </div>
 
-  <!-- desktop icons -->
-  <nav class="icons" aria-label="Desktop">
-    <button class="icon" data-open="about" style="--ix:12%;--iy:20%">
-      <svg class="ico" viewBox="0 0 48 60"><path d="M6 3 h24 l12 12 v40 a2 2 0 0 1-2 2 h-34 a2 2 0 0 1-2-2 v-50 a2 2 0 0 1 2-2z" fill="#fff" stroke="#111" stroke-width="2.6" stroke-linejoin="round"/><path d="M30 3 v12 h12" fill="none" stroke="#111" stroke-width="2.6" stroke-linejoin="round"/></svg>
-      <span class="label">about me</span>
-    </button>
+  <!-- rotating badge -->
+  <div class="badge" aria-hidden="true">
+    <svg viewBox="0 0 120 120">
+      <defs><path id="circ" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+      <text><textPath href="#circ">PEOPLE · PRODUCTS · PARTNERS · </textPath></text>
+    </svg>
+    <span>✦</span>
+  </div>
 
-    <button class="icon" data-open="experience" style="--ix:80%;--iy:12%">
-      <svg class="ico folder" viewBox="0 0 80 62"><use href="#folder-shape" fill="#1f1f1f"/><rect x="2" y="14" width="76" height="46" rx="4" fill="url(#gingham)"/><use href="#bow" x="2" y="0" width="18" height="15"/><use href="#bow" x="14" y="2" width="14" height="12"/></svg>
-      <span class="label">experience</span>
-    </button>
+  <!-- stage: portrait + floating glass -->
+  <div class="stage">
+    <svg class="wires" viewBox="0 0 1200 560" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M210 40 C 230 260, 380 300, 470 330"/>
+      <path d="M1000 120 C 990 300, 860 330, 740 350"/>
+    </svg>
 
-    <button class="icon" data-open="projects" style="--ix:63%;--iy:22%">
-      <svg class="ico folder" viewBox="0 0 80 62"><use href="#folder-shape" fill="#1c1c1c"/><rect x="2" y="14" width="76" height="46" rx="4" fill="#2d2d2d"/><rect x="36" y="14" width="8" height="46" fill="#f4a6bd"/><use href="#bow" x="28" y="6" width="24" height="20"/><use href="#bow" x="8" y="20" width="14" height="12"/><use href="#bow" x="58" y="20" width="14" height="12"/></svg>
-      <span class="label">projects</span>
-    </button>
+    <article class="float-card fc-left">
+      <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <h3>Turn conversations<br>into partnerships.</h3>
+      <p>Outreach, pitching and follow-through.</p>
+    </article>
 
-    <button class="icon" data-open="ai" style="--ix:16%;--iy:62%">
-      <svg class="ico folder" viewBox="0 0 80 62"><use href="#folder-shape" fill="#f19fb9"/><rect x="2" y="14" width="76" height="46" rx="4" fill="url(#dots)"/><use href="#bow" x="58" y="0" width="18" height="15"/></svg>
-      <span class="label">ai portfolio</span>
-    </button>
-
-    <button class="icon" data-open="skills" style="--ix:82%;--iy:58%">
-      <svg class="ico folder" viewBox="0 0 80 62"><use href="#folder-shape" fill="#1a1a1a"/><rect x="2" y="14" width="76" height="46" rx="4" fill="url(#tinydots)"/><use href="#bow" x="8" y="12" width="16" height="13"/><use href="#bow" x="32" y="12" width="16" height="13"/><use href="#bow" x="56" y="12" width="16" height="13"/></svg>
-      <span class="label">skills</span>
-    </button>
-
-    <button class="icon" data-open="extras" style="--ix:34%;--iy:12%">
-      <svg class="ico folder" viewBox="0 0 80 62"><use href="#folder-shape" fill="#f19fb9"/><rect x="2" y="14" width="76" height="46" rx="4" fill="url(#gingham-pink)"/></svg>
-      <span class="label">certs &amp; clubs</span>
-    </button>
-
-    <button class="icon" data-open="me" style="--ix:32%;--iy:76%">
-      <span class="ico polaroid"><img src="assets/avatar.webp" alt=""></span>
-      <span class="label">hi, it's me</span>
-    </button>
-
-    <button class="icon" data-open="contact" style="--ix:75%;--iy:80%">
-      <svg class="ico" viewBox="0 0 48 60"><path d="M6 3 h24 l12 12 v40 a2 2 0 0 1-2 2 h-34 a2 2 0 0 1-2-2 v-50 a2 2 0 0 1 2-2z" fill="#fde9ef" stroke="#e389a5" stroke-width="2.6" stroke-linejoin="round"/><path d="M30 3 v12 h12" fill="none" stroke="#e389a5" stroke-width="2.6" stroke-linejoin="round"/></svg>
-      <span class="label">contact me</span>
-    </button>
-  </nav>
-
-  <!-- ===== windows ===== -->
-
-  <section class="window" id="win-me" data-title="hi, it's me" style="--x:34vw;--y:4vh;--w:420px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">hi, it's me</span></div>
-    <div class="wbody me-body">
-      <img class="me-card" src="assets/card.webp" alt="Hi, I'm Dua, Project Associate. CS grad, GIKI, based in Islamabad. I believe the best work happens where people, products and partners meet. A little chaotic, a lot curious. Building, connecting, shipping, several things at a time." width="896" height="1200">
-    </div>
-  </section>
-
-  <section class="window" id="win-about" data-title="about me" style="--x:22vw;--y:10vh;--w:520px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">about me</span></div>
-    <div class="wbody">
-      <div class="about-head">
-        <img class="avatar" src="assets/avatar.webp" alt="Dua-e-Zahra Naqvi" width="68" height="68">
-        <div>
-          <h1>Dua-e-Zahra Naqvi</h1>
-          <p class="muted">Islamabad, Pakistan</p>
-        </div>
+    <article class="float-card fc-right">
+      <div class="faces" aria-hidden="true">
+        <img src="assets/avatar.webp" alt="">
+        <span class="face f2">🌍</span>
+        <span class="face f3">🤝</span>
+        <span class="plus">+</span>
       </div>
-      <p class="tagline">Strategic Partnerships · Technical Sales · Product Management · AI Product Development &amp; Real-Time Systems</p>
-      <p>I'm a Computer Science graduate from GIKI who sits between the technical and the human side of AI. Today I build international partnerships and help hire talent at <strong>ImagineArt</strong>; before that I shipped computer-vision, ML forecasting and GIS systems as an engineer.</p>
-      <p>I like turning research prototypes into things people can actually use, and turning cold outreach into real relationships.</p>
-      <div class="chips">
-        <span>BS Computer Science · GIKI '26</span>
-        <span>Dean's Honor Roll ×2</span>
-        <span>GenPakistan Fellow</span>
-      </div>
-    </div>
-  </section>
+      <h3>Talent, anywhere.</h3>
+      <p>Hiring for technical and non-technical roles.</p>
+    </article>
 
-  <section class="window" id="win-experience" data-title="experience" style="--x:30vw;--y:14vh;--w:600px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">experience</span></div>
-    <div class="wbody">
-      <ol class="timeline">
-        <li>
-          <div class="when">Feb '26 – Present</div>
-          <h3>Talent Acquisition &amp; International Partnerships Associate</h3>
-          <p class="org">ImagineArt · Islamabad</p>
-          <ul>
-            <li>End-to-end talent acquisition: sourcing, screening and coordinating candidates for technical and non-technical roles.</li>
-            <li>Build and manage international partnerships with organisations across regions.</li>
-            <li>Work directly with founders and leadership on growth initiatives.</li>
-            <li>Led outreach campaigns for the global ambassador and creator programs.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="when">Jul – Aug 2025</div>
-          <h3>AI Intern</h3>
-          <p class="org">EmpowerBits · Islamabad</p>
-          <ul>
-            <li>Real-time computer-vision pipelines for a virtual eyeglasses try-on (MediaPipe, Python, React).</li>
-            <li>Face-landmark detection and geometric alignment, tuned for low latency on live video.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="when">Mar – Apr 2025</div>
-          <h3>ML Intern</h3>
-          <p class="org">10Pearls · Remote</p>
-          <ul>
-            <li>End-to-end ML pipeline forecasting PM10 from live weather and pollution data.</li>
-            <li>Automated retraining via GitHub Actions; web app serving 3-day forecasts.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="when">Jun – Jul 2024</div>
-          <h3>WebGIS Intern</h3>
-          <p class="org">National Disaster Management Authority (NDMA)</p>
-          <ul>
-            <li>Django-based spatial analytics system over large-scale geographic data.</li>
-          </ul>
-        </li>
-      </ol>
+    <div class="orbit back" aria-hidden="true">
+      <div class="tile t-a"><span class="moon"></span></div>
+      <div class="tile t-b"><span class="hill"></span></div>
+      <div class="tile t-c"></div>
     </div>
-  </section>
 
-  <section class="window" id="win-projects" data-title="projects" style="--x:18vw;--y:8vh;--w:680px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">projects</span></div>
-    <div class="wbody">
-      <div class="cards">
-        <article class="card">
-          <span class="card-emoji">🧬</span>
-          <h3>Federated Rare Disease Diagnosis</h3>
-          <p>Final-year project. Institutions train diagnostic models together with federated learning, never sharing patient data. Blockchain handles secure aggregation and auditability.</p>
-          <div class="tags"><span>Federated Learning</span><span>Blockchain</span><span>Medical AI</span></div>
-        </article>
-        <article class="card">
-          <span class="card-emoji">💼</span>
-          <h3>Automated Career Assistant</h3>
-          <p>LLM app with LangChain + RAG that ingests resumes and job descriptions and writes ATS-optimised resumes, cover letters and emails.</p>
-          <div class="tags"><span>LangChain</span><span>RAG</span><span>Prompting</span></div>
-        </article>
-        <article class="card">
-          <span class="card-emoji">📚</span>
-          <h3>Research Query Assistant</h3>
-          <p>Citation-aware RAG over academic papers, answering with paper and section references. Compared chunking strategies; evaluated with Recall@k and faithfulness.</p>
-          <div class="tags"><span>FAISS</span><span>RAG eval</span><span>PDF ingestion</span></div>
-        </article>
-        <article class="card">
-          <span class="card-emoji">🌫️</span>
-          <h3>PM10 Forecasting Pipeline</h3>
-          <p>LSTM time-series model on 180 days of pollution and weather data. RMSE 11.29, R² 0.997. Hopsworks versioning, GitHub Actions retraining, live 3-day forecasts.</p>
-          <div class="tags"><span>LSTM</span><span>MLOps</span><span>Hopsworks</span></div>
-        </article>
-        <article class="card">
-          <span class="card-emoji">🗺️</span>
-          <h3>Automated Risk Calculator</h3>
-          <p>Interactive GIS tool (Django + Mapbox) scoring hazard risk on uploaded shapefiles across 15+ infrastructure layers and 1000+ geographic units.</p>
-          <div class="tags"><span>Django</span><span>Mapbox</span><span>GIS</span></div>
-        </article>
-      </div>
+    <img class="portrait" src="assets/hero.webp" alt="Dua-e-Zahra, smiling, chin resting on her hand" width="1024" height="1290">
+
+    <div class="orbit front">
+      <div class="glass g1"><span class="ico ico-green">◎</span><div><strong>Partnerships</strong><small>Bridges across borders.</small></div></div>
+      <div class="glass g2"><span class="ico ico-violet">✦</span><div><strong>AI products</strong><small>Prototype to product.</small></div></div>
+      <div class="glass g3"><span class="ico ico-peach">◐</span><div><strong>Talent</strong><small>Right people, right roles.</small></div></div>
     </div>
-  </section>
 
-  <section class="window" id="win-ai" data-title="ai portfolio" style="--x:36vw;--y:20vh;--w:440px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">ai portfolio</span></div>
-    <div class="wbody center">
-      <svg class="big-folder" viewBox="0 0 80 62" aria-hidden="true"><use href="#folder-shape" fill="#f19fb9"/><rect x="2" y="14" width="76" height="46" rx="4" fill="url(#dots)"/><use href="#bow" x="54" y="-2" width="24" height="20"/></svg>
-      <h2 class="serif-h">my AI work ✦</h2>
-      <p>Images, videos and experiments I've made with generative AI tools live in one folder.</p>
-      <a class="btn" href="https://drive.google.com/drive/folders/1e8-bptwraTwyYx8hRLhcGsK51VBurwHl?usp=sharing" target="_blank" rel="noopener">Open the folder ↗</a>
+    <div class="corner corner-left">
+      <span class="rule"></span>
+      <p>Currently at ImagineArt,<br>building global partnerships.</p>
     </div>
-  </section>
-
-  <section class="window" id="win-skills" data-title="skills" style="--x:42vw;--y:12vh;--w:520px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">skills</span></div>
-    <div class="wbody">
-      <div class="skill-group"><h4>Partnerships &amp; BD</h4><div class="chips"><span>Strategic Partnerships</span><span>Lead Generation</span><span>Market Research</span><span>Outreach</span><span>Negotiation</span><span>Pre-Sales</span></div></div>
-      <div class="skill-group"><h4>Communication &amp; Ops</h4><div class="chips"><span>Pitching</span><span>Pipeline Management</span><span>Relationship Building</span><span>Agile / Scrum</span><span>Technical Docs</span></div></div>
-      <div class="skill-group"><h4>AI</h4><div class="chips"><span>LLMs</span><span>RAG</span><span>Prompt Engineering</span><span>AI Product Workflows</span><span>ML Fundamentals</span></div></div>
-      <div class="skill-group"><h4>Code</h4><div class="chips"><span>Python</span><span>C++</span><span>JavaScript</span><span>React</span><span>Django</span><span>PostgreSQL</span></div></div>
-      <div class="skill-group"><h4>Tools</h4><div class="chips"><span>LangChain</span><span>TensorFlow</span><span>scikit-learn</span><span>Hugging Face</span><span>Pandas</span><span>Docker</span><span>GitHub Actions</span><span>Vercel</span><span>QGIS</span><span>Mapbox</span></div></div>
+    <div class="corner corner-right">
+      <span class="spark big" aria-hidden="true">✦</span>
+      <p>A little chaotic.<br>A lot curious.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="window" id="win-extras" data-title="certs & clubs" style="--x:26vw;--y:24vh;--w:480px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">certs &amp; clubs</span></div>
-    <div class="wbody">
-      <ul class="list">
-        <li><span>🌷</span><div><strong>Fellow, GenPakistan Fellowship</strong><br><span class="muted">US Embassy &amp; USIP</span></div></li>
-        <li><span>👩‍💻</span><div><strong>Lead, Women in Computing</strong><br><span class="muted">ACM GIKI Chapter: team leadership, community, events</span></div></li>
-        <li><span>📣</span><div><strong>Liaison &amp; Media Head</strong><br><span class="muted">GIKI Media Club: outreach, comms, stakeholders</span></div></li>
-        <li><span>🎓</span><div><strong>Google certificates</strong><br><span class="muted">Intro to Generative AI · Crash Course on Python · Digital Marketing</span></div></li>
+<!-- ===== about ===== -->
+<section class="section about reveal" id="about">
+  <p class="eyebrow">About</p>
+  <div class="about-grid">
+    <h2 class="display">Half engineer, <em>half people person.</em></h2>
+    <div>
+      <p>I studied Computer Science at GIKI and spent my internships shipping computer vision, ML forecasting and GIS systems. Somewhere along the way I realised I love the space between the code and the people it's for.</p>
+      <p>Today I build international partnerships and help hire talent at <strong>ImagineArt</strong>, working directly with founders on growth, ambassador and creator programs.</p>
+      <ul class="chips">
+        <li>BS Computer Science · GIKI '26</li>
+        <li>Dean's Honor Roll ×2</li>
+        <li>GenPakistan Fellow</li>
+        <li>Islamabad, Pakistan</li>
       </ul>
     </div>
-  </section>
-
-  <section class="window" id="win-contact" data-title="contact me" style="--x:48vw;--y:28vh;--w:400px">
-    <div class="titlebar"><div class="lights"><button class="l close" aria-label="Close"></button><button class="l min" aria-label="Minimise"></button><button class="l max" aria-label="Maximise"></button></div><span class="wtitle">contact me</span></div>
-    <div class="wbody center">
-      <p class="serif-h">let's talk</p>
-      <p>Partnerships, collaborations or just a hello. My inbox is open.</p>
-      <div class="contact-links">
-        <a class="btn" href="mailto:duazahra796@gmail.com">duazahra796@gmail.com</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/dua-e-zahra-9b52b3266" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn ghost" href="https://github.com/DuaeZahra" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- dock -->
-<footer class="dock-wrap">
-  <div class="dock" role="toolbar" aria-label="Dock">
-    <button class="dock-item d-finder" data-open="about" title="about me"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#e8b7c6"/><path d="M20 0 v40" stroke="#7a4a5a" stroke-width="1.5"/><path d="M20 0 h11 a9 9 0 0 1 9 9 v22 a9 9 0 0 1-9 9 h-11z" fill="#c98aa0"/><circle cx="13" cy="15" r="1.8" fill="#4a2a37"/><circle cx="27" cy="15" r="1.8" fill="#4a2a37"/><path d="M11 26 q9 6 18 0" fill="none" stroke="#4a2a37" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-    <button class="dock-item d-dark" data-open="projects" title="projects"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#2a2a2a"/><g fill="#fff"><circle cx="12" cy="12" r="2.6"/><circle cx="20" cy="12" r="2.6"/><circle cx="28" cy="12" r="2.6"/><circle cx="12" cy="20" r="2.6"/><circle cx="20" cy="20" r="2.6"/><circle cx="28" cy="20" r="2.6"/><circle cx="12" cy="28" r="2.6"/><circle cx="20" cy="28" r="2.6"/><circle cx="28" cy="28" r="2.6"/></g></svg></button>
-    <button class="dock-item" data-open="skills" title="skills"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#dc9bb0"/><text x="20" y="29" text-anchor="middle" font-family="Playfair Display, serif" font-weight="700" font-size="24" fill="#fff">A</text></svg></button>
-    <button class="dock-item" data-open="experience" title="experience"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><circle cx="20" cy="20" r="11" fill="none" stroke="#111" stroke-width="2.6"/></svg></button>
-    <button class="dock-item" data-open="contact" title="email me"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="8" y="12" width="24" height="17" rx="2.5" fill="none" stroke="#8e2a4c" stroke-width="2.2"/><path d="M9 14 l11 8 l11-8" fill="none" stroke="#8e2a4c" stroke-width="2.2" stroke-linejoin="round"/></svg></button>
-    <button class="dock-item" data-open="about" title="today"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><text id="cal-mon" x="20" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="6.5" fill="#e0567f">OCT</text><text id="cal-day" x="20" y="31" text-anchor="middle" font-family="Inter, sans-serif" font-weight="500" font-size="17" fill="#111">16</text></svg></button>
-    <button class="dock-item" data-open="contact" title="say hi"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><path d="M20 10 c-7 0-12 4.3-12 9.5 c0 2.8 1.4 5.2 3.7 6.9 l-1.2 4.6 l5-2.6 c1.4.4 2.9.6 4.5.6 c7 0 12-4.3 12-9.5 S27 10 20 10z" fill="none" stroke="#8e2a4c" stroke-width="2.2" stroke-linejoin="round"/></svg></button>
-    <button class="dock-item" data-open="ai" title="ai portfolio"><svg viewBox="0 0 40 40"><defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9fbd"/><stop offset="1" stop-color="#f06f98"/></linearGradient></defs><rect width="40" height="40" rx="9" fill="url(#pg)"/><rect x="11" y="11" width="18" height="18" rx="4" fill="#fff" opacity=".35"/></svg></button>
-    <button class="dock-item" data-open="extras" title="certs &amp; clubs"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><text id="cal-year" x="20" y="24" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#e0567f">2026</text></svg></button>
-    <button class="dock-item" data-open="projects" title="work"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#8a1f45"/><circle cx="20" cy="20" r="10" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="20" cy="20" r="3.4" fill="#fff"/></svg></button>
-    <button class="dock-item" data-open="skills" title="toolbox"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fbe1e9"/><g fill="#d4507b"><circle cx="13" cy="13" r="2.4"/><circle cx="20" cy="13" r="2.4"/><circle cx="27" cy="13" r="2.4"/><circle cx="13" cy="20" r="2.4"/><circle cx="20" cy="20" r="2.4"/><circle cx="27" cy="20" r="2.4"/><circle cx="13" cy="27" r="2.4"/><circle cx="20" cy="27" r="2.4"/><circle cx="27" cy="27" r="2.4"/></g></svg></button>
-    <span class="dock-sep"></span>
-    <a class="dock-item" href="https://www.linkedin.com/in/dua-e-zahra-9b52b3266" target="_blank" rel="noopener" title="LinkedIn"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="11" y="11" width="18" height="18" rx="3" fill="#d81b5c"/></svg></a>
   </div>
+</section>
+
+<!-- ===== experience ===== -->
+<section class="section reveal" id="experience">
+  <p class="eyebrow">Experience</p>
+  <h2 class="display">Where I've <em>been building.</em></h2>
+  <ol class="xp">
+    <li>
+      <span class="when">Feb '26 — Now</span>
+      <div><h3>Talent Acquisition &amp; International Partnerships Associate</h3><p class="org">ImagineArt · Islamabad</p>
+      <p>Sourcing and hiring across technical and non-technical roles, building partnerships with organisations across regions, and leading outreach for the global ambassador and creator programs.</p></div>
+    </li>
+    <li>
+      <span class="when">Jul — Aug 2025</span>
+      <div><h3>AI Intern</h3><p class="org">EmpowerBits · Islamabad</p>
+      <p>Real-time computer-vision pipelines for a virtual eyeglasses try-on, tuned for low latency on live video.</p></div>
+    </li>
+    <li>
+      <span class="when">Mar — Apr 2025</span>
+      <div><h3>ML Intern</h3><p class="org">10Pearls · Remote</p>
+      <p>End-to-end pipeline forecasting PM10 from live weather and pollution data, with automated retraining and a 3-day forecast app.</p></div>
+    </li>
+    <li>
+      <span class="when">Jun — Jul 2024</span>
+      <div><h3>WebGIS Intern</h3><p class="org">National Disaster Management Authority</p>
+      <p>Django-based spatial analytics over large-scale geographic data.</p></div>
+    </li>
+  </ol>
+</section>
+
+<!-- ===== work ===== -->
+<section class="section reveal" id="work">
+  <p class="eyebrow">Selected work</p>
+  <h2 class="display">Things I've <em>made.</em></h2>
+  <div class="cards">
+    <article class="card">
+      <span class="ico ico-violet">✚</span>
+      <h3>Federated Rare Disease Diagnosis</h3>
+      <p>Final-year project. Hospitals train diagnostic models together with federated learning, without sharing patient data. Blockchain handles secure aggregation and auditability.</p>
+      <p class="tags">Federated learning · Blockchain · Medical AI</p>
+    </article>
+    <article class="card">
+      <span class="ico ico-peach">✎</span>
+      <h3>Automated Career Assistant</h3>
+      <p>LLM app with LangChain and RAG that reads resumes and job descriptions and writes ATS-ready resumes, cover letters and emails.</p>
+      <p class="tags">LangChain · RAG · Prompting</p>
+    </article>
+    <article class="card">
+      <span class="ico ico-green">❝</span>
+      <h3>Research Query Assistant</h3>
+      <p>Citation-aware RAG over academic papers that answers with paper and section references, evaluated with Recall@k and faithfulness.</p>
+      <p class="tags">FAISS · RAG eval · PDF ingestion</p>
+    </article>
+    <article class="card">
+      <span class="ico ico-blue">≋</span>
+      <h3>PM10 Forecasting Pipeline</h3>
+      <p>LSTM model on 180 days of pollution and weather data. RMSE 11.29, R² 0.997, with Hopsworks versioning and automated retraining.</p>
+      <p class="tags">LSTM · MLOps · Hopsworks</p>
+    </article>
+    <article class="card">
+      <span class="ico ico-pink">⌖</span>
+      <h3>Automated Risk Calculator</h3>
+      <p>GIS tool (Django + Mapbox) scoring hazard risk on uploaded shapefiles across 15+ infrastructure layers and 1000+ geographic units.</p>
+      <p class="tags">Django · Mapbox · GIS</p>
+    </article>
+    <a class="card card-cta" href="https://drive.google.com/drive/folders/1e8-bptwraTwyYx8hRLhcGsK51VBurwHl?usp=sharing" target="_blank" rel="noopener">
+      <span class="spark big" aria-hidden="true">✦</span>
+      <h3>My AI portfolio</h3>
+      <p>Images, videos and experiments made with generative AI.</p>
+      <span class="arrow">Open folder ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== skills ===== -->
+<section class="section reveal" id="skills">
+  <p class="eyebrow">Toolkit</p>
+  <div class="skills">
+    <div><h4>Partnerships</h4><p>Strategic partnerships · Lead generation · Market research · Outreach · Negotiation · Pre-sales</p></div>
+    <div><h4>People &amp; ops</h4><p>Talent acquisition · Pitching · Pipeline management · Agile / Scrum · Technical writing</p></div>
+    <div><h4>AI</h4><p>LLMs · RAG · Prompt engineering · AI product workflows · ML fundamentals</p></div>
+    <div><h4>Build</h4><p>Python · C++ · JavaScript · React · Django · PostgreSQL · LangChain · TensorFlow · Hugging Face · Docker · Vercel</p></div>
+  </div>
+  <ul class="chips chips-center">
+    <li>🌷 GenPakistan Fellow, US Embassy &amp; USIP</li>
+    <li>👩‍💻 Lead, Women in Computing (ACM GIKI)</li>
+    <li>📣 Liaison &amp; Media Head, GIKI Media Club</li>
+    <li>🎓 Google: Generative AI · Python · Digital Marketing</li>
+  </ul>
+</section>
+
+<!-- ===== contact ===== -->
+<section class="section contact reveal" id="contact">
+  <h2 class="display big">Let's build something <em>together.</em></h2>
+  <p class="lede">Partnerships, collaborations, hiring, or just a hello. My inbox is open.</p>
+  <div class="cta">
+    <a class="btn btn-dark" href="mailto:duazahra796@gmail.com">duazahra796@gmail.com <span aria-hidden="true">↗</span></a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/dua-e-zahra-9b52b3266" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-ghost" href="https://github.com/DuaeZahra" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>© <span id="year">2026</span> Dua-e-Zahra Naqvi</span>
+  <a href="desktop/">✦ Prefer the cute version? Open the desktop →</a>
 </footer>
 
-<script src="script.js"></script>
+</div>
+
+<script src="home.js"></script>
 </body>
 </html>
